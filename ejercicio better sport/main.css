@@ -1,0 +1,310 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #000000;
+  scroll-behavior: smooth;
+}
+
+/* Header Styles */
+.contenedor {
+  background-color: #000000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.contenedor header {
+  max-width: 98%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.contenedor header .logo a {
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contenedor header ul {
+  display: flex;
+  list-style: none;
+  margin-right: 100px;
+}
+
+.contenedor header nav ul li a {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  margin: 0 20px;
+  padding: 3px;
+  transition: .1s;
+  text-decoration: none;
+}
+
+.contenedor header nav ul li a:hover {
+  color: #ffffff;
+  border-bottom: solid 3px #ffffff;
+}
+
+/* Carousel Styles */
+.carrousel {
+  width: 70%;
+  margin: 50px auto 0;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.carrousel .grande {
+  width: 500%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  transition: all .5s ease;
+  transform: translateX(0%);
+}
+
+.carrousel .img {
+  width: calc(100% / 5 - 2em);
+  max-height: 60vh;
+  border-radius: 20px;
+  box-shadow: -2px -1px 10px 3px rgb(0, 0, 0);
+}
+
+.carrousel .puntos {
+  list-style: none;
+  width: 100%;
+  margin: 1em 0 0;
+  padding: .4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel .punto {
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  border-radius: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+.carrousel .punto.activo {
+  background-color: rgb(0, 0, 0);
+}
+
+/* Banner Styles */
+.banner {
+  margin-top: 5px;
+  background: #fff8f8;
+  height: 20%;
+  color: #000000;
+  display: block;
+  text-align: center;
+}
+
+.banner .mujer {
+  padding: 40px;
+}
+
+.banner .mujer h1 {
+  padding: 15px;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.banner .mujer h3 {
+  padding: 15px;
+}
+
+.banner .contenido-banner {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  max-width: 90%;
+  height: 90%;
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.contenido-banner .Productos {
+  background-color: #ffffff;
+  width: 250px;
+  height: 400px;
+  margin: 20px 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.contenido-banner .Productos .img img {
+  width: 95%;
+  height: 200px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.contenido-banner .Productos .datos {
+  border-top: 1px solid #000;
+  color: #000000;
+  padding: 10px 15px;
+}
+
+.contenido-banner .Productos .datos .marca {
+  padding-bottom: 15px;
+  color: #000000;
+}
+
+/* Parallax Styles */
+.Parallax, .Parallax-2, .Parallax-3 {
+  clear: both;
+  width: 100%;
+  height: 150px;
+  margin-top: 5px;
+  background-size: cover;
+  background-position: center top;
+}
+
+.Parallax {
+  background: none;
+  background-color: #000000; /* Color de fondo negro */
+}
+
+.Parallax-2 {
+  background: none;
+  background-color: #000000; /* Color de fondo negro */
+}
+
+.Parallax-3 {
+  background: none;
+  background-color: #000000; /* Color de fondo negro */
+}
+
+.Parallax, .Parallax-2, .Parallax-3 {
+  clear: both;
+  width: 100%;
+  height: 150px;
+  margin-top: 5px;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;    /* Centra verticalmente */
+}
+
+.Parallax h1, .Parallax-2 h1, .Parallax-3 h1 {
+  color: #ffffff;
+  font-size: 50px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Footer Styles */
+.final {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 300px;
+  max-width: 100%;
+  margin: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.final .logos, .final .menu, .final .sociales {
+  max-width: calc(100% / 4 - 5px);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.final .logos .acerca img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.final .logos .nombre h3, .final .logos .nombre h5 {
+  color: #ffffff;
+}
+
+.final .menu h2 {
+  color: rgb(255, 255, 255);
+}
+
+.final .menu ul li {
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+.final .menu ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.final .menu ul li a:hover {
+  color: #ffffff;
+  border-bottom: solid 3px #ffffff;
+}
+
+.final .sociales .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.final .sociales .redes a i {
+  color: #ffffff;
+  display: inline-block;
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+}
+
+.final .sociales .redes a i:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+/* Additional Styles */
+.contenedor-1 {
+  background-color: rgb(211, 206, 206);
+  max-width: 100%;
+  height: 70px;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-1 ul {
+  display: flex;
+  list-style: none;
+  margin-top: 5%;
+}
+
+.contenedor-1 nav ul li a {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin: 0 30px;
+  padding: 3px;
+  transition: .1s;
+  text-decoration: none;
+}
+
+.contenedor-1 nav ul li a:hover {
+  color: #9e1030;
+  border-bottom: solid 3px #9e1030;
+}
