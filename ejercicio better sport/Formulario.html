@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Sport</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- https://es.statista.com/grafico/13471/facturacion-por-calzado-de-una-seleccion-de-marcas-deportivas/ -->
+<div class="Better">
+    <h2>¿Quieres conocer nuestro enfoque social y visión?</h2>
+    <form id="formulario">
+        <!-- Pregunta 1 -->
+        <label for="respuesta-si">Sí</label>
+        <input type="radio" id="respuesta-si" name="respuesta1" value="si">
+        <label for="respuesta-no">No</label>
+        <input type="radio" id="respuesta-no" name="respuesta1" value="no"><br>
+        
+        <div id="informacion1-si" class="informacion">
+            <p>¡Genial! en Better Sport es primordial el bienestar y la educación de nuestros colaboradores; y enfocamos nuestro esfuerzo en promover la actividad física saludable.</p>
+        </div>
+        <div id="informacion1-no" class="informacion">
+            <p>Entendemos la diversidad de opinión y prioridades.</p>
+        </div>
+        
+        <!-- Pregunta 2 -->
+        <div id="pregunta2" class="pregunta">
+            <h2>¿Deseas observar a quienes apoyamos con nuestra labor?</h2>
+            <label for="deporte-si">Sí</label>
+            <input type="radio" id="deporte-si" name="respuesta2" value="si">
+            <label for="deporte-no">No</label>
+            <input type="radio" id="deporte-no" name="respuesta2" value="no"><br>
+        </div>
+        
+        <div id="informacion2-si" class="informacion">
+            <p>Promovemos la actividad física y posibilitamos con nuestro producto de alta calidad implementos esenciales para el desarrollo, y participamos de espacios y entornos deportivos.</p>
+        </div>
+        <div id="informacion2-no" class="informacion">
+            <p>Entendemos la diversidad de opinión y prioridades.</p>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div id="pregunta3" class="pregunta">
+            <h2>¿Conoce nuestro manejo de transporte amigable al medio ambiente y nuestra logística limpia?</h2>
+            <label for="transporte-si">Sí</label>
+            <input type="radio" id="transporte-si" name="respuesta3" value="si">
+            <label for="transporte-no">No</label>
+            <input type="radio" id="transporte-no" name="respuesta3" value="no"><br>
+        </div>
+        
+        <div id="informacion3-si" class="informacion">
+            <p>Consideramos el deporte como estilo de vida saludable, para Better Sport es primordial ejecutar manejo ambiental, mitigando los efectos nocivos de la contaminación, es por esta razón que nuestros domiciliarios se transportan en vehículos eléctricos.</p>
+        </div>
+        <div id="informacion3-no" class="informacion">
+            <p>Entendemos la diversidad de opinión y prioridades.</p>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div id="pregunta4" class="pregunta">
+            <h2>Es importante para Better Sport que conozcas todos nuestros servicios, ¿te le mides?</h2>
+            <label for="servicios-si">Sí</label>
+            <input type="radio" id="servicios-si" name="respuesta4" value="si">
+            <label for="servicios-no">No</label>
+            <input type="radio" id="servicios-no" name="respuesta4" value="no"><br>
+        </div>
+        
+        <div id="informacion4-si" class="informacion">
+            <p>Dentro de los servicios que ofrecemos destaca la asesoría personalizada, además de ayudarte con tu compra por más de 3 pares te obsequiamos un día de gym, y si deseas adquirir nuestro producto personalizado según el deporte que desees ejercer te obsequiamos un plan de rutina y dieta.</p>
+        </div>
+        <div id="informacion4-no" class="informacion">
+            <p>Entendemos la diversidad de opinión y prioridades, esta ya es la última consulta.</p>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div id="pregunta5" class="pregunta">
+            <h2>¿Deseas ver una gráfica, donde puedes visualizar qué marcas fueron las que generaron millones de dólares?</h2>
+            <label for="grafica-si">Sí</label>
+            <input type="radio" id="grafica-si" name="respuesta5" value="si">
+            <label for="grafica-no">No</label>
+            <input type="radio" id="grafica-no" name="respuesta5" value="no"><br>
+        </div>
+        
+        <div id="informacion5-si" class="informacion">
+            <div class="grafica-container">
+                <h2>Gráfica de Barras</h2>
+                <div class="grafica" id="grafica"></div>
+            </div>
+        </div>
+        <div id="informacion5-no" class="informacion">
+            <p>Puedes observar nuestros productos.</p>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div id="pregunta6" class="pregunta">
+            <h2>¿Deseas ver nuestros productos, o quieres generar alguna consulta muy específica?</h2>
+            <label for="productos-si">Sí</label>
+            <input type="radio" id="productos-si" name="respuesta6" value="si">
+            <label for="productos-no">No</label>
+            <input type="radio" id="productos-no" name="respuesta6" value="no"><br>
+        </div>
+        
+        <div id="informacion6-si" class="informacion">
+            <p>¡Excelente! actualmente contamos con estilos para dama, caballero y niño, podrás acceder a nuestros listados seleccionando tu opción de preferencia.</p>
+        </div>
+        <div id="informacion6-no" class="informacion">
+            <p>Puedes observar nuestros productos.</p>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div id="pregunta7" class="pregunta">
+            <h2>¿Deseas visitar nuestra página web?</h2>
+            <label for="web-si">Sí</label>
+            <input type="radio" id="web-si" name="respuesta7" value="si">
+            <label for="web-no">No</label>
+            <input type="radio" id="web-no" name="respuesta7" value="no"><br>
+        </div>
+        
+        <div id="informacion7-si" class="informacion">
+            <p>¡Genial! Puedes visitar nuestra página web para más información y productos.</p>
+        </div>
+        <div id="informacion7-no" class="informacion">
+            <p>Entendemos la diversidad de opinión y prioridades.</p>
+        </div>
+
+    </form>
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const data = [
+        { label: 'Nike', value: 29.1 },
+        { label: 'Adidas', value: 13.1 },
+        { label: 'Skechers', value: 7.4 },
+        { label: 'Puma', value: 4.5 },
+        { label: 'Asics', value: 3.0 },
+        { label: 'Converse', value: 2.1 },
+        { label: 'Under Armour', value: 1.4 }
+    ];
+
+    const grafica = document.getElementById('grafica');
+
+    data.forEach(item => {
+        const barra = document.createElement('div');
+        barra.classList.add('barra');
+        barra.style.height = (item.value * 10) + 'px';
+        barra.innerHTML = `<span>${item.value}</span>`;
+
+        const etiqueta = document.createElement('div');
+        etiqueta.classList.add('etiqueta');
+        etiqueta.innerText = item.label;
+
+        const contenedor = document.createElement('div');
+        contenedor.style.position = 'relative';
+        contenedor.style.display = 'flex';
+        contenedor.style.flexDirection = 'column';
+        contenedor.style.alignItems = 'center';
+        contenedor.appendChild(barra);
+        contenedor.appendChild(etiqueta);
+
+        grafica.appendChild(contenedor);
+    });
+
+    function manejarCambio(respuestaNum, siguientePreguntaNum) {
+        const respuestaInputs = document.querySelectorAll(`input[name="respuesta${respuestaNum}"]`);
+        respuestaInputs.forEach((input) => {
+            input.addEventListener('change', function() {
+                document.querySelector(`#informacion${respuestaNum}-si`).style.display = 'none';
+                document.querySelector(`#informacion${respuestaNum}-no`).style.display = 'none';
+
+                if (this.value === 'si') {
+                    document.querySelector(`#informacion${respuestaNum}-si`).style.display = 'block';
+                    
+                    // Redirect to index.html if it's the last question
+                    if (respuestaNum === 7) {
+                        window.location.href = 'index.html';
+                    }
+                } else if (this.value === 'no') {
+                    document.querySelector(`#informacion${respuestaNum}-no`).style.display = 'block';
+                }
+
+                if (siguientePreguntaNum) {
+                    document.querySelector(`#pregunta${siguientePreguntaNum}`).style.display = 'block';
+                }
+            });
+        });
+    }
+
+    manejarCambio(1, 2);
+    manejarCambio(2, 3);
+    manejarCambio(3, 4);
+    manejarCambio(4, 5);
+    manejarCambio(5, 6);
+    manejarCambio(6, 7);  // Added for the new question
+    manejarCambio(7, null);  // No next question for the new question
+});
+</script>

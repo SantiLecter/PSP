@@ -1,0 +1,149 @@
+/* Establecer la fuente predeterminada para todo el documento */
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Color de texto blanco para legibilidad */
+}
+
+/* Estilo para el contenedor principal */
+.Better {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222; /* Fondo gris oscuro para contraste */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    color: #fff; /* Color de texto blanco */
+}
+
+/* Estilo para los encabezados */
+h2 {
+    font-size: 1.5em;
+    color: #fff; /* Color de texto blanco */
+    margin-bottom: 10px;
+}
+
+/* Estilo para los párrafos */
+p {
+    font-size: 1em;
+    color: #ddd; /* Color de texto gris claro para legibilidad */
+    line-height: 1.6;
+}
+
+/* Estilo para las etiquetas de formulario */
+label {
+    font-size: 1em;
+    color: #fff; /* Color de texto blanco */
+    margin-right: 10px;
+}
+
+/* Estilo para los inputs de formulario */
+input[type="radio"] {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-right: 5px;
+    vertical-align: middle; /* Alinear el botón de radio con el medio del texto */
+}
+
+input[type="radio"]:hover {
+    border-color: #777;
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50; /* Color verde para el estado seleccionado */
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+input[type="radio"]:checked {
+    border-color: #4CAF50;
+    animation: pulse 0.3s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Estilo para las secciones de información */
+.informacion {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #555; /* Borde gris oscuro */
+    border-radius: 4px;
+    background-color: #333; /* Fondo gris más oscuro */
+    color: #fff; /* Color de texto blanco */
+}
+
+/* Estilo para el contenedor del gráfico */
+.grafica-container {
+    margin-top: 20px;
+}
+
+.grafica {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 320px; /* Altura aumentada para crear espacio en la parte superior */
+    background-color: #444; /* Fondo gris oscuro */
+    padding: 40px 20px 20px 20px; /* Añadir padding en la parte superior */
+    border-radius: 8px;
+    position: relative; /* Asegurar que la posición absoluta de las etiquetas funcione */
+}
+
+/* Estilo para cada barra en el gráfico */
+.barra {
+    width: 40px;
+    background-color: #4caf50; /* Color verde para las barras */
+    color: #fff; /* Color de texto blanco */
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 5px;
+    margin-top: auto; /* Asegurar que las barras comiencen desde la parte inferior */
+}
+
+/* Estilo para las etiquetas de las barras */
+.barra span {
+    position: absolute;
+    top: -30px; /* Posicionar la etiqueta por encima de la barra */
+    font-size: 0.9em;
+    color: #fff; /* Color de texto blanco */
+}
+
+/* Estilo para las etiquetas de las barras */
+.etiqueta {
+    margin-top: 5px;
+    font-size: 0.9em;
+    text-align: center;
+    color: #fff; /* Color de texto blanco */
+}
